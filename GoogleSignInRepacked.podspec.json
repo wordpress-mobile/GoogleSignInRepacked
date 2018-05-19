@@ -25,7 +25,7 @@
     "Resources/GoogleSignIn.bundle"
   ],
   "source": {
-    "http": "https://github.com/jleandroperez/GoogleSignInRepacked/raw/master/GoogleSignIn-4.1.2.Repack.tar.gz"
+    "http": "https://github.com/jleandroperez/GoogleSignInRepacked/raw/master/Repacked/GoogleSignIn-4.1.2.Repack.tar.gz"
   },
   "summary": "Enables iOS apps to sign in with Google.",
   "vendored_frameworks": [
