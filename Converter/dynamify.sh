@@ -64,4 +64,9 @@ lipo -create \
 	./x86_64/libGoogleSignIn_dynamic.dylib \
 	./arm64/libGoogleSignIn_dynamic.dylib \
 	./armv7/libGoogleSignIn_dynamic.dylib \
-	-output ./libGoogleSignIn_dynamic.dylib
+	-output ./GoogleSignIn
+
+rm -rf arm64
+rm -rf armv7
+rm -rf i386
+rm -rf x86_64
