@@ -15,9 +15,9 @@
     "text": "Copyright 2018 Google",
     "type": "Copyright"
   },
-  "name": "GoogleSignIn",
+  "name": "GoogleSignInRepacked",
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
   "resources": [
     "Resources/GoogleSignIn.bundle"
