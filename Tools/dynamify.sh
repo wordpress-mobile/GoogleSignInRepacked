@@ -27,43 +27,43 @@ mkdir arm64
 
 pushd .
 cd arm64
-lipo ../$STATIC_LIB_PATH -extract arm64 -output GoogleSignIn
-lipo GoogleSignIn -thin arm64 -output GoogleSignInThin
+lipo ../$STATIC_LIB_PATH -extract arm64 -output GoogleSignInStatic
+lipo GoogleSignInStatic -thin arm64 -output GoogleSignInThin
 ar -x GoogleSignInThin
-libtool -dynamic *.o -o libGoogleSignIn_dynamic.dylib -ios_version_min 8.0 $DEPENDENCIES -syslibroot $SDK_DEVICE_PATH -F$DEPENDENCIES_PATH -arch_only arm64
+libtool -dynamic *.o -o GoogleSignIn -ios_version_min 8.0 $DEPENDENCIES -syslibroot $SDK_DEVICE_PATH -F$DEPENDENCIES_PATH -arch_only arm64
 popd
 
 pushd .
 cd armv7
-lipo ../$STATIC_LIB_PATH -extract armv7 -output GoogleSignIn
-lipo GoogleSignIn -thin armv7 -output GoogleSignInThin
+lipo ../$STATIC_LIB_PATH -extract armv7 -output GoogleSignInStatic
+lipo GoogleSignInStatic -thin armv7 -output GoogleSignInThin
 ar -x GoogleSignInThin
-libtool -dynamic *.o -o libGoogleSignIn_dynamic.dylib -ios_version_min 8.0 $DEPENDENCIES -syslibroot $SDK_DEVICE_PATH -F$DEPENDENCIES_PATH -arch_only armv7
+libtool -dynamic *.o -o GoogleSignIn -ios_version_min 8.0 $DEPENDENCIES -syslibroot $SDK_DEVICE_PATH -F$DEPENDENCIES_PATH -arch_only armv7
 popd
 
 pushd .
 cd x86_64
-lipo ../$STATIC_LIB_PATH -extract x86_64 -output GoogleSignIn
-lipo GoogleSignIn -thin x86_64 -output GoogleSignInThin
+lipo ../$STATIC_LIB_PATH -extract x86_64 -output GoogleSignInStatic
+lipo GoogleSignInStatic -thin x86_64 -output GoogleSignInThin
 ar -x GoogleSignInThin
-libtool -dynamic *.o -o libGoogleSignIn_dynamic.dylib -ios_simulator_version_min 8.0 $DEPENDENCIES -syslibroot $SDK_SIMULATOR_PATH -F$DEPENDENCIES_PATH -arch_only x86_64
+libtool -dynamic *.o -o GoogleSignIn -ios_simulator_version_min 8.0 $DEPENDENCIES -syslibroot $SDK_SIMULATOR_PATH -F$DEPENDENCIES_PATH -arch_only x86_64
 popd
 
 pushd .
 cd i386
-lipo ../$STATIC_LIB_PATH -extract i386 -output GoogleSignIn
-lipo GoogleSignIn -thin i386 -output GoogleSignInThin
+lipo ../$STATIC_LIB_PATH -extract i386 -output GoogleSignInStatic
+lipo GoogleSignInStatic -thin i386 -output GoogleSignInThin
 ar -x GoogleSignInThin
-libtool -dynamic *.o -o libGoogleSignIn_dynamic.dylib -ios_simulator_version_min 8.0 $DEPENDENCIES -syslibroot $SDK_SIMULATOR_PATH -F$DEPENDENCIES_PATH -arch_only i386
+libtool -dynamic *.o -o GoogleSignIn -ios_simulator_version_min 8.0 $DEPENDENCIES -syslibroot $SDK_SIMULATOR_PATH -F$DEPENDENCIES_PATH -arch_only i386
 popd
 
 
 
 lipo -create \
-	./i386/libGoogleSignIn_dynamic.dylib \
-	./x86_64/libGoogleSignIn_dynamic.dylib \
-	./arm64/libGoogleSignIn_dynamic.dylib \
-	./armv7/libGoogleSignIn_dynamic.dylib \
+	./i386/GoogleSignIn \
+	./x86_64/GoogleSignIn \
+	./arm64/GoogleSignIn \
+	./armv7/GoogleSignIn \
 	-output ./GoogleSignIn
 
 rm -rf arm64
