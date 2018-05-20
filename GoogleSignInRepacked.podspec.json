@@ -4,7 +4,7 @@
     "GoogleToolboxForMac/NSDictionary+URLArguments": "~> 2.1",
     "GoogleToolboxForMac/NSString+URLArguments": "~> 2.1"
   },
-  "description": "This POD contains the exact original GoogleSignIn framework, repaced as dynamic. See the README for more information.",
+  "description": "This POD contains the exact original GoogleSignIn framework, repacked as dynamic. See the README for more information.",
   "frameworks": [
     "CoreText",
     "SafariServices",
@@ -29,5 +29,8 @@
   "vendored_frameworks": [
     "Frameworks/GoogleSignIn.framework"
   ],
-  "version": "4.1.2"
+  "version": "4.1.2",
+  "pod_target_xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  }
 }
