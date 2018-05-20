@@ -4,7 +4,7 @@
     "GoogleToolboxForMac/NSDictionary+URLArguments": "~> 2.1",
     "GoogleToolboxForMac/NSString+URLArguments": "~> 2.1"
   },
-  "description": "The Google Sign-In SDK allows users to sign in with their Google account from third-party apps.",
+  "description": "This POD contains the exact original GoogleSignIn framework, repaced as dynamic. See the README for more information.",
   "frameworks": [
     "CoreText",
     "SafariServices",
