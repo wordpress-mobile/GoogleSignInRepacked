@@ -6,9 +6,12 @@
   },
   "description": "This POD contains the exact original GoogleSignIn framework, repacked as dynamic. See the README for more information.",
   "frameworks": [
+    "CoreGraphics",
     "CoreText",
+    "LocalAuthentication",
     "SafariServices",
-    "Security"
+    "Security",
+    "SystemConfiguration"
   ],
   "homepage": "https://developers.google.com/identity/sign-in/ios/",
   "license": {
@@ -29,7 +32,7 @@
   "vendored_frameworks": [
     "Frameworks/GoogleSignIn.framework"
   ],
-  "version": "4.1.2",
+  "version": "4.4.0",
   "pod_target_xcconfig": {
     "ENABLE_BITCODE": "NO"
   }

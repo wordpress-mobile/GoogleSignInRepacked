@@ -12,7 +12,7 @@
 ##
 ##
 DEPENDENCIES="-framework CoreText -framework SystemConfiguration -framework Security -framework Foundation -framework CoreGraphics \
-				-lSystem -framework UIKit -framework SafariServices -framework GoogleSignInDependencies"
+				-lSystem -framework UIKit -framework SafariServices -framework GoogleSignInDependencies -framework LocalAuthentication"
 SDK_DEVICE_PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk"
 SDK_SIMULATOR_PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk"
 DEPENDENCIES_PATH="../Original/"
