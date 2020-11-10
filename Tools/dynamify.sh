@@ -1,6 +1,6 @@
 ##
 ## 	Source: 	https://developers.google.com/identity/sign-in/ios/sdk/
-## 	Specs: 		https://github.com/CocoaPods/Specs/blob/master/Specs/d/4/0/GoogleSignIn/4.1.2/GoogleSignIn.podspec.json
+## 	Specs: 		https://github.com/CocoaPods/Specs/blob/trunk/Specs/d/4/0/GoogleSignIn/4.1.2/GoogleSignIn.podspec.json
 ## 	Tutorial: 	https://pewpewthespells.com/blog/convert_static_to_dynamic.html
 ##
 ## 	Download:
